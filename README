@@ -1,0 +1,25 @@
+Ice Cold Sandwich
+HTC Glacier
+======================================
+
+To get started with Android, you'll need to get familiar with [Git and Repo] (http://source.android.com/download/using-repo).
+
+To initialize repository run this command:
+
+repo init -u git://github.com/firesnatch/icecold_android.git
+
+
+Then to sync up:
+
+    repo sync
+
+
+To build:
+
+    . build/envsetup.sh
+
+    lunch full_glacier-userdebug
+
+    device/htc/glacier/extract-files.sh
+
+    make -j4 otapackage
